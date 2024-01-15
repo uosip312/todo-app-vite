@@ -1,6 +1,7 @@
 import html from './app.html?raw';
 import todoStore, { Filters } from '../store/todo.store';
 import { renderTodos, renderPending } from './use-cases';
+import { sign } from '../sign'
 
 const ElementIDs = {
     TodoList: '.todo-list',
@@ -31,6 +32,7 @@ export const App = ( elementId ) => {
         app.innerHTML = html;
         document.querySelector(elementId).append(app);
         displayTodos();
+        sign;
     })();
 
     //Referencias HTML
