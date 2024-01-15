@@ -16,14 +16,17 @@ const state = {
 };
 
 const initStore = () => {
-    console.log(state);
     console.log('InitStore {{Edi/Byte}} 💻');
 }
 
 const loadStore = () => {
     throw new Error('No implementado');
 }
-
+/**
+ * 
+ * @param {String} filter filtros válidos: All | Completed | Pending
+ * @returns {Array<Object>}
+ */
 const getTodos = ( filter = Filters.All ) => {
     switch ( filter ) {
         case Filters.All:
