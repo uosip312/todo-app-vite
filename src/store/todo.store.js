@@ -8,9 +8,8 @@ export const Filters = {
 
 const state = {
     todos: [
-        new Todo('Programar'),
-        new Todo('Estudiar'),
-        new Todo('Comer'),
+        new Todo('Tarea Ejemplo 1'),
+        new Todo('Tarea Ejemplo 2'),
     ],
     filter: Filters.All,
 };
